@@ -147,10 +147,37 @@ we can write again again same style or use a shared style.
   margin-bottom: 10px;
 }
 
-.fact-name{
+.fact-name {
   font-size: 1.25rem;
   font-weight: 600;
   margin-top: 10px;
+}
+.fact-description {
+  max-width: 540px;
+  margin-bottom: 20px;
+}
+/* Sponsor related style */
+
+.sponsor-info {
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sponsor-companies {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsor-img {
+  filter: gray;
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+/* Disable grayscale on hover */
+.sponsor-img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
 }
 
 /* responsive media qurey */
@@ -162,8 +189,21 @@ we can write again again same style or use a shared style.
     flex-direction: column;
   }
 
-  .team-img-container {
-    grid-template-columns: repeat(1, 1fr);
+  .team-img-container,
+  .facts-container,
+  .sponsor-companies {
+    /* grid-template-columns: repeat(1, 1fr); 
+    if we repeat 1 by 1 then we can write 1fr or repeat(1, 1fr)
+    */
+    grid-template-columns: 1fr;
+  }
+  .facts-container {
+    justify-items: center;
+    gap: 24px;
+  }
+  .sponsor-companies{
+    justify-content: center;
+    gap: 30px;
   }
   .our-features {
     margin-left: 20px;
@@ -192,5 +232,15 @@ we can write again again same style or use a shared style.
   }
   .our-features {
     margin: 50px auto;
+  }
+  .sponsor-companies{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-items: center;
+  }
+  .facts-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
   }
 }
