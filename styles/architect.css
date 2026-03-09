@@ -201,8 +201,15 @@ we can write again again same style or use a shared style.
     justify-items: center;
     gap: 24px;
   }
-  .sponsor-companies{
-    justify-content: center;
+  .some-fact-title,
+  .fact-description {
+    text-align: center;
+  }
+  .fact-description {
+    margin: 50px auto;
+  }
+  .sponsor-companies {
+    justify-items: center;
     gap: 30px;
   }
   .our-features {
@@ -233,14 +240,21 @@ we can write again again same style or use a shared style.
   .our-features {
     margin: 50px auto;
   }
-  .sponsor-companies{
+  .sponsor-companies {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     justify-items: center;
   }
-  .facts-container{
+  .facts-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-items: center;
+  }
+  .some-fact-title,
+  .fact-description {
+    text-align: center;
+  }
+  .fact-description {
+    margin: 50px auto;
   }
 }
