@@ -13,6 +13,9 @@
   display: flex;
 }
 
+.text-primary{
+  color: #ff900e;
+}
 .text-gray {
   color: #424242;
 }
@@ -41,6 +44,11 @@ main {
 
 main > section{
     margin-top: 120px;
+}
+
+.section-title{
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 /* header styles */
@@ -115,31 +123,22 @@ we can write again again same style or use a shared style.
     font-weight: 500;
 }
 
-.feature-title{
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* responsive media qurey */
 
 @media screen and (max-width: 576px) {
   .navbar,
-  .nav-link {
+  .nav-link,
+  .teams {
     flex-direction: column;
   }
+
+  .team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features{
+    margin-left: 20px;
+  }
+
   .banner-title {
     font-weight: 700;
     font-size: 1.8rem;
@@ -152,5 +151,16 @@ we can write again again same style or use a shared style.
     font-weight: 600;
     border-radius: 8px;
     border: none;
+  }
+}
+
+/* medium devices */
+
+@media screen and (min-width:576px) and (max-width:992px){
+  .teams{
+    flex-direction: column;
+  }
+  .our-features{
+    margin: 50px auto;
   }
 }
