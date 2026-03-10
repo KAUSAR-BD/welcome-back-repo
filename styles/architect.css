@@ -220,6 +220,15 @@ we can write again again same style or use a shared style.
   filter: none;
 }
 
+/* Footer Related Style */
+.footer-description{
+  background-color: #FFF4E7;
+  padding: 40px 410px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 40px;
+}
 /* responsive media qurey */
 
 @media screen and (max-width: 576px) {
@@ -278,6 +287,14 @@ we can write again again same style or use a shared style.
     border-radius: 8px;
     border: none;
   }
+  .footer-description{
+  background-color: #FFF4E7;
+  padding: 24px 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 28px;
+}
 
  
 }
@@ -317,4 +334,12 @@ we can write again again same style or use a shared style.
   .fact-description {
     margin: 50px auto;
   }
+  .footer-description{
+  background-color: #FFF4E7;
+  padding: 24px 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 30px;
+}
 }
